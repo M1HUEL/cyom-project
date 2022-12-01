@@ -2,6 +2,8 @@ import Head from 'next/head'
 
 import Header from '../components/Header'
 
+import Link from 'next/link'
+
 export default function MetodologySpiral() {
   return (
     <>
@@ -36,6 +38,9 @@ export default function MetodologySpiral() {
                 controls
                 className="w-full h-full px-4 py-4 rounded-xl bg-white"
               ></video>
+              <p className="text-right text-white">
+                Video extraido del canal de YT:
+              </p>
             </div>
           </div>
         </div>
@@ -90,30 +95,30 @@ export default function MetodologySpiral() {
             los modelos de gestión ágil. Este tipo de gestión suele ser efectiva
             cuando:
           </p>
-          <p className="post-text">
-            <ul className="list-item list-disc ml-12">
-              <li>El proyecto es de largo alcance.</li>
-              <li>El cliente pide entregas recurrentes.</li>
-              <li>Se puede crear un prototipo.</li>
-              <li>Cuando la gestión de los riesgos y costos es esencial.</li>
-              <li>
-                El proyecto pertenece a una categoría de alto riesgo, o tiene
-                especiales implicancias para la empresa.
-              </li>
-              <li>
-                El proyecto pertenece a una categoría de alto riesgo, o tiene
-                especiales implicancias para la empresa.
-              </li>
-              <li>
-                Los requisitos son poco claros y complejo, o no está muy claro
-                lo que el cliente pretende obtener.
-              </li>
-              <li>
-                Se producen cambios constantes y se quieren gestionar con cierto
-                margen de maniobra.
-              </li>
-            </ul>
-          </p>
+          <ul className="list-item list-disc ml-12">
+            <li className="post-text">El proyecto es de largo alcance.</li>
+            <li className="post-text">El cliente pide entregas recurrentes.</li>
+            <li className="post-text">Se puede crear un prototipo.</li>
+            <li className="post-text">
+              Cuando la gestión de los riesgos y costos es esencial.
+            </li>
+            <li className="post-text">
+              El proyecto pertenece a una categoría de alto riesgo, o tiene
+              especiales implicancias para la empresa.
+            </li>
+            <li className="post-text">
+              El proyecto pertenece a una categoría de alto riesgo, o tiene
+              especiales implicancias para la empresa.
+            </li>
+            <li className="post-text">
+              Los requisitos son poco claros y complejo, o no está muy claro lo
+              que el cliente pretende obtener.
+            </li>
+            <li className="post-text">
+              Se producen cambios constantes y se quieren gestionar con cierto
+              margen de maniobra.
+            </li>
+          </ul>
         </div>
         <div className="post-white">
           <h4 className="post-title">
@@ -125,13 +130,13 @@ export default function MetodologySpiral() {
             nuestro equipo de desarrollo de software, y nos comunica el objetivo
             de querer tener un software que permita:
           </p>
-          <p className="post-text">
-            <ul className="list-item list-disc ml-12">
-              <li>Rastrear a los camiones en ruta.</li>
-              <li>Conocer su carga y datos personales del conductor. .</li>
-              <li>Ver los kilómetros recorridos.</li>
-            </ul>
-          </p>
+          <ul className="list-item list-disc ml-12">
+            <li className="post-text">Rastrear a los camiones en ruta.</li>
+            <li className="post-text">
+              Conocer su carga y datos personales del conductor. .
+            </li>
+            <li className="post-text">Ver los kilómetros recorridos.</li>
+          </ul>
           <p className="post-text">
             Se trata de un proyecto a largo plazo que representa un gran gasto
             para la empresa. Al identificar el largo alcance del objetivo, el
@@ -144,7 +149,7 @@ export default function MetodologySpiral() {
         </div>
         <div className="post-gray">
           <img
-            src="https://www.sinnaps.com/wp-content/uploads/2017/05/scrum-min.png"
+            src="https://www.lifeder.com/wp-content/uploads/2020/02/Analisis-1-626x420.jpg"
             className="post-img"
           />
           <h4 className="post-title">Fases de la metodología espiral</h4>
@@ -161,6 +166,15 @@ export default function MetodologySpiral() {
             hasta finalizar el ciclo del modelo en espiral, que principalmente
             abarca los cuatro pasos que aparecen a continuación.
           </p>
+          <div className="flex flex-row text-right justify-right space-x-2 post-text">
+            <span>Imagen extraida de</span>
+            <Link
+              href="https://www.lifeder.com/modelo-espiral/"
+              className="cursor-pointer text-blue-600 hover:underline"
+            >
+              Lifeder
+            </Link>
+          </div>
         </div>
         {/* Steps */}
         <div className="grid grid-cols-1 desktop:grid-cols-2 desktop:px-12 desktop:py-12 desktop:gap-12">
@@ -262,9 +276,9 @@ export default function MetodologySpiral() {
             <div className="flex flex-col text-center justify-center">
               <img
                 src="https://apps2.itson.edu.mx/admisiones/miadmision/Aviso/ITSONMARCA2.png"
-                className="object-cover"
+                className="m-auto object-cover w-[600px] h-full"
               />
-              <p className="font-medium text-white">
+              <p className="font-thin text-white">
                 Pagina hecha por estudiantes del ITSON
               </p>
             </div>

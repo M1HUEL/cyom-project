@@ -2,6 +2,8 @@ import Head from 'next/head'
 
 import Header from '../components/Header'
 
+import Link from 'next/link'
+
 export default function MetodologyScrum() {
   return (
     <>
@@ -13,7 +15,7 @@ export default function MetodologyScrum() {
       <div className="w-full h-full">
         <div className="bg-[#fe6d73]">
           <Header />
-          <div className="flex flex-col px-12 py-3 tablet:px-24 tablet:py-12 desktop:px-80 desktop:py-24">
+          <div className="flex flex-col px-6 py-3 tablet:px-24 tablet:py-12 desktop:px-80 desktop:py-24">
             <h1 className="desktop:text-center font-bold text-2xl tablet:text-3xl desktop:text-4Fxl text-white">
               Introducción a la
             </h1>
@@ -33,8 +35,17 @@ export default function MetodologyScrum() {
               <video
                 src="/assets/videos/Metodología-Scrum.webm"
                 controls
-                className="w-full h-full px-1 py-1 desktop:px-4 desktop:py-4 rounded-xl bg-white"
+                className="w-full h-full px-4 py-4 rounded-xl bg-white"
               ></video>
+              <p className="text-right text-white">
+                Video extraido del canal de YT:
+                <Link
+                  href="https://www.youtube.com/watch?v=a33xOe9d_Dk&t=26s"
+                  className="text-blue-600 ml-2"
+                >
+                  Espacios Businesss Media
+                </Link>
+              </p>
             </div>
           </div>
         </div>
@@ -232,9 +243,9 @@ export default function MetodologyScrum() {
             <div className="flex flex-col text-center justify-center">
               <img
                 src="https://apps2.itson.edu.mx/admisiones/miadmision/Aviso/ITSONMARCA2.png"
-                className="object-cover"
+                className="m-auto object-cover w-[600px] h-full"
               />
-              <p className="font-medium text-white">
+              <p className="font-thin text-white">
                 Pagina hecha por estudiantes del ITSON
               </p>
             </div>

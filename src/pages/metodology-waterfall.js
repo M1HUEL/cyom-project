@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 
 import { FcApproval } from 'react-icons/fc'
+import Link from 'next/link'
 
 export default function MetodologyWaterfall() {
   return (
@@ -36,6 +37,15 @@ export default function MetodologyWaterfall() {
                 controls
                 className="w-full h-full px-4 py-4 rounded-xl bg-white"
               ></video>
+              <p className="text-right text-white">
+                Video extraido del canal de YT:
+                <Link
+                  href="https://www.youtube.com/watch?v=a33xOe9d_Dk&t=26s"
+                  className="text-blue-600 ml-2"
+                >
+                  Espacios Businesss Media
+                </Link>
+              </p>
             </div>
           </div>
         </div>
@@ -106,7 +116,7 @@ export default function MetodologyWaterfall() {
           <h4 className="post-title">Beneficios de la metodología</h4>
           <div className="flex flex-row items-center space-x-3">
             <div>
-              <FcApproval className="w-14 h-14  cursor-pointer" />
+              <FcApproval className="w-14 h-14 cursor-pointer" />
             </div>
             <div>
               <p className="post-text">
@@ -123,7 +133,7 @@ export default function MetodologyWaterfall() {
           </div>
           <div className="flex flex-row items-center space-x-3">
             <div>
-              <FcApproval className="w-14 h-14  cursor-pointer" />
+              <FcApproval className="w-14 h-14 cursor-pointer" />
             </div>
             <div>
               <p className="post-text">
@@ -169,7 +179,7 @@ export default function MetodologyWaterfall() {
             src="/assets/images/fases-metodologia-waterfall.png"
             className="post-img"
           />
-          <h4 className="post-title">Fases de la Metodología SCRUM</h4>
+          <h4 className="post-title">Fases de la metodología cascada</h4>
           <p className="post-text">
             En la práctica, se aplican diversas versiones del modelo. Los más
             habituales son los modelos que dividen los procesos de desarrollo en
@@ -191,7 +201,7 @@ export default function MetodologyWaterfall() {
         <div className="grid grid-cols-1 desktop:grid-cols-2 desktop:px-12 desktop:py-12 desktop:gap-12">
           <div className="steps">
             <img
-              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-analisis-configuracion_114360-1438.jpg?w=1380&t=st=1669183218~exp=1669183818~hmac=13813dbb8b1f1db7715b80e8a8ec3d91b18b035d97499fc1765681fa5bc7421a"
+              src="https://img.freepik.com/vector-gratis/concepto-isometrico-cms_23-2148807389.jpg?w=1380&t=st=1669927988~exp=1669928588~hmac=0ff480b19cda123fb33b71a063f0e689df567abe28641823af136ae272e492f1"
               className="steps-img"
             />
             <h3 className="post-title">1) Análisis</h3>
@@ -226,7 +236,7 @@ export default function MetodologyWaterfall() {
           </div>
           <div className="steps">
             <img
-              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-auditoria-ambiental_114360-8784.jpg?w=826&t=st=1669183193~exp=1669183793~hmac=ac83661c242a945f2162e0f619718520c95db80c2e0d973929c70bb60d929851"
+              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-software-multiplataforma_114360-7293.jpg?w=1380&t=st=1669928053~exp=1669928653~hmac=303caa126a2790dffc80d339e00a14c34ae3d330209afd28db33d10c81ac3a06"
               className="steps-img"
             />
             <h3 className="post-title">2) Diseño</h3>
@@ -244,7 +254,7 @@ export default function MetodologyWaterfall() {
           </div>
           <div className="steps">
             <img
-              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-auditoria-ambiental_114360-8784.jpg?w=826&t=st=1669183193~exp=1669183793~hmac=ac83661c242a945f2162e0f619718520c95db80c2e0d973929c70bb60d929851"
+              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-sistema-operativo_114360-2195.jpg?w=826&t=st=1669928031~exp=1669928631~hmac=a00ffc1abeac22e9f3ec5b56835114edbe1c14cfcae9671694905d05cb8ab13e"
               className="steps-img"
             />
             <h3 className="post-title">3) Implementación</h3>
@@ -263,7 +273,7 @@ export default function MetodologyWaterfall() {
           </div>
           <div className="steps">
             <img
-              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-auditoria-ambiental_114360-8784.jpg?w=826&t=st=1669183193~exp=1669183793~hmac=ac83661c242a945f2162e0f619718520c95db80c2e0d973929c70bb60d929851"
+              src="https://img.freepik.com/vector-gratis/concepto-prueba-software-proceso-prueba-codigo-aplicacion-o-sitio-web-especialista-ti-busca-errores-idea-tecnologia-informatica-analisis-digital-ilustracion-vectorial-estilo-dibujos-animados_613284-1444.jpg?w=900&t=st=1669928125~exp=1669928725~hmac=a47a4c0edd6344f980922a0111326d674262c6b2a4b26d2ab2ad0487efd04801"
               className="steps-img"
             />
             <h3 className="post-title">4) Prueba</h3>
@@ -280,7 +290,7 @@ export default function MetodologyWaterfall() {
           </div>
           <div className="steps">
             <img
-              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-auditoria-ambiental_114360-8784.jpg?w=826&t=st=1669183193~exp=1669183793~hmac=ac83661c242a945f2162e0f619718520c95db80c2e0d973929c70bb60d929851"
+              src="https://img.freepik.com/vector-gratis/visualizacion-paginas-web-procedimiento-protocolo-flujo-trabajo-software-dinamico-desarrollo-full-stack-marcado-sistema-administracion-driver-memoria-compartida-ilustracion-metafora-concepto-aislado-vector_335657-4299.jpg?w=826&t=st=1669928097~exp=1669928697~hmac=86e120c3b1dab0b8cc7a3fbd9e658316dbf69ef7b861814e6e7e7eddf301a674"
               className="steps-img"
             />
             <h3 className="post-title">5) Mantenimiento</h3>
@@ -297,9 +307,9 @@ export default function MetodologyWaterfall() {
             <div className="flex flex-col text-center justify-center">
               <img
                 src="https://apps2.itson.edu.mx/admisiones/miadmision/Aviso/ITSONMARCA2.png"
-                className="object-cover"
+                className="m-auto object-cover w-[600px] h-full"
               />
-              <p className="font-medium text-white">
+              <p className="font-thin text-white">
                 Pagina hecha por estudiantes del ITSON
               </p>
             </div>

@@ -1,16 +1,43 @@
+import Link from 'next/link'
+
+import { IoMdReorder } from 'react-icons/io'
+import { FcLike } from 'react-icons/fc'
+
 export default function Header() {
-    return (
-        <header className="">
-            <div className="px-6 py-12">
-                <div className="flex flex-row items-center justify-evenly space-x-3">
-                    <div>
-                        <h1 className="font-black text-3xl text-white">Cyom</h1>
-                    </div>
-                    <div>
-                        <a className="px-3 py-2 rounded-xl cursor-pointer text-black bg-white hover:bg-gray-100">Holaaaaa!!</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-    );
+  return (
+    <header className="header">
+      <div className="header-container">
+        <div className="header-content">
+          <div>
+            <Link
+              href="/"
+              className="px-2 py-2 font-black text-3xl rounded-md text-white"
+            >
+              Cyom
+            </Link>
+          </div>
+          <nav className="nav">
+            <ul className="flex flex-row items-center space-x-3">
+              <li>
+                <Link href="/metodology-spiral" className="nav-item">
+                  Metodologia Espiral
+                </Link>
+              </li>
+              <li>
+                <Link href="/metodology-waterfall" className="nav-item">
+                  Metodologia Cascada
+                </Link>
+              </li>
+              <li>
+                <Link href="/metodology-scrum" className="nav-item">
+                  Metodologia Scrum
+                </Link>
+              </li>
+              <IoMdReorder className="nav-icon" />
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  )
 }

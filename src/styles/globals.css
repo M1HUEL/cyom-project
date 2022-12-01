@@ -3,7 +3,48 @@
 @tailwind components;
 
 @layer components {
-  
+  .header {
+    @apply bg-transparent;
+  }
+  .header-container {
+    @apply px-10 py-6 desktop:px-10 desktop:py-12;
+  }
+  .header-content {
+    @apply flex flex-row items-center justify-between desktop:justify-evenly space-x-3;
+  }
+  .nav {
+    @apply flex flex-row items-center space-x-3;
+  }
+  .nav-item {
+    @apply hidden px-2 py-2 rounded-md text-xs tablet:text-sm desktop:text-sm tablet:flex desktop:flex cursor-pointer text-black bg-white hover:bg-gray-200;
+  }
+  .nav-icon {
+    @apply flex w-8 h-8 tablet:hidden xl:hidden rounded cursor-pointer bg-white hover:bg-gray-100;
+  }
+  .post-white {
+    @apply flex flex-col space-y-6 px-12 md:px-24 xl:px-32 py-12 bg-white;
+  }
+  .post-gray {
+    @apply flex flex-col space-y-6 px-12 md:px-24 xl:px-32 py-12 bg-gray-100;
+  }
+  .post-title {
+    @apply font-black text-3xl tablet:text-4xl desktop:text-5xl text-black;
+  }
+  .post-text {
+    @apply font-light text-xl tablet:text-2xl desktop:text-xl text-black;
+  }
+  .post-img {
+    @apply px-1 py-1 bg-black rounded-xl;
+  }
+  .steps {
+    @apply flex flex-col space-y-3 px-12 md:px-24 desktop:px-32 py-12 bg-gray-100;
+  }
+  .steps-card {
+    @apply flex flex-col space-y-3 px-12 py-12 md:px-24 xl:px-32 bg-gray-100;
+  }
+  .steps-img {
+    @apply px-1 py-1 w-full h-[500px] object-cover bg-black rounded-xl;
+  }
 }
 
 @tailwind utilities;
